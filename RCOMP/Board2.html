@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Board2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: 150px repeat(3, 1fr);
+  grid-template-rows: 30px repeat(3, 30vh);
+  gap: 1px;
+  padding: 10px;
+}
+.grid-item {
+  background-color: lightblue;
+  padding: 10px;
+  color: white;
+  font-size: 16px;  text-align: center;
+}
+.grid-title {
+  background-color: darkblue;
+  border-style: solid;
+  border-color: darkblue;
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;  font-weight: bold;  text-align: center;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<div class="grid">
+<div></div><div id="grid-col-title1" class="grid-title">row title 1</div>
+<div id="grid-col-title2" class="grid-title">row title 2</div>
+<div id="grid-col-title3" class="grid-title">row title 3</div>
+<div id="grid-row-title1" class="grid-title"> col title 1</div>
+<div id="grid-item-1" class="grid-item">cell id: 1</div>
+<div id="grid-item-2" class="grid-item">cell id: 2</div>
+<div id="grid-item-3" class="grid-item">cell id: 3</div>
+<div id="grid-row-title2" class="grid-title"> col title 2</div>
+<div id="grid-item-4" class="grid-item">cell id: 4</div>
+<div id="grid-item-5" class="grid-item">cell id: 5</div>
+<div id="grid-item-6" class="grid-item">cell id: 6</div>
+<div id="grid-row-title3" class="grid-title"> col title 3</div>
+<div id="grid-item-7" class="grid-item">cell id: 7</div>
+<div id="grid-item-8" class="grid-item">cell id: 8</div>
+<div id="grid-item-9" class="grid-item">cell id: 9</div>
+</div>
+</body>
+</html>
